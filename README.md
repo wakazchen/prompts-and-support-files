@@ -12,3 +12,5 @@ This is the code collection for the article "Method for Constructing Knowledge G
 (5) Entity disambiguation.py: This file contains the prompts and Python code for entity disambiguation.
 
 (6) Primary Lung Cancer Surgical Clinical Pathway Form.pdf: This is the form for the national standard clinical pathway for non-small cell lung cancer.
+
+**The original data is in the format of PDF electronic medical records, which cannot be directly used for tasks such as named entity recognition. Therefore, the original data needs to be first converted into a text format (txt) that can be recognized. The data used in the code is all text data processed from the format conversion, not the original electronic medical record text.**
