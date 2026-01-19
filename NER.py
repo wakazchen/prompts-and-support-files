@@ -27,7 +27,7 @@ This is a named entity recognition task for the inpatient process of non-small c
 def extract_entities(text):
     try:
         response = openai.chat.completions.create(
-            model="gpt-3.5-turbo-1106",
+            model="gpt-4",
             response_format={"type": "json_object"},
             messages=[
                 {
@@ -39,7 +39,9 @@ def extract_entities(text):
                     "content": f"{PROMPT}\n\n电子病历内容：\n{text}\n\n请以JSON格式返回结果，包含两个字段：'实体名称'和'识别原因'，其中'识别原因'必须是以下五种类型之一：医院活动和结果、医疗资源、医务人员、检查、变异"
                 }
             ],
-            temperature=0.2
+            temperature=0.1,
+            max_tokens=4096,
+            presence_penalty=0
         )
         return response.choices[0].message.content
     except Exception as e:
@@ -107,3 +109,4 @@ if __name__ == "__main__":
     OUTPUT_FILE = "命名实体识别结果.xlsx"
     results = process_files(FOLDER_PATH)
     save_to_excel(results, OUTPUT_FILE)
+
