@@ -105,7 +105,8 @@ def save_to_excel(results, output_file):
     print(f"Results have been saved to: {output_file}")
 
 if __name__ == "__main__":
-    FOLDER_PATH = "C:\\Users\\胜利星"
+    FOLDER_PATH = "C:\\Users\\list"
     OUTPUT_FILE = "Named Entity Recognition Results.xlsx"
     results = process_files(FOLDER_PATH)
     save_to_excel(results, OUTPUT_FILE)
+
