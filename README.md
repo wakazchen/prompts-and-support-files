@@ -5,7 +5,7 @@ This is the code collection for the article "Method for Constructing Knowledge G
 
 (2) NER.py: The data used is electronic medical record texts. By combining with prompt words, it recognizes named entities contained in the texts. The final recognized results are Chinese named entities, which are output in tabular form.
 
-(3) RE.py: The data used includes electronic medical record texts and the named entities recognized by the NER file. By combining with prompt words to understand the context, it identifies relationships between different entities, ultimately generating a JSON file containing entities and their inter-entity relationships.
+(3) RE.py: The data used includes electronic medical record texts and the named entities recognized by the NER file. By combining with prompt words to understand the context, it identifies relationships between different entities, ultimately generating a JSON file containing entities and their inter-entity relationships.Due to the excessive number of characters in some medical record texts, a "---page break---" symbol is inserted between different parts of the record to serve as a marker for splitting the record. The record is segmented in this way to better accomplish the task.
 
 (4) Knowledge filling.py: It uses the set of entities recognized by NER.py. By combining with prompt words, it classifies all entities into different ontology concepts.
 
