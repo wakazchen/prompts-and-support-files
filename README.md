@@ -22,4 +22,3 @@ Secondly, using this code requires a valid API interface; otherwise, you need to
     
 As both the experimental dataset and the prompt words are in Chinese, translating them into English may introduce linguistic differences. Prompt words expressed differently in Chinese and English may lead to deviations in the final results. In the attachment, we provide the original Chinese medical records in PDF format, Chinese medical records in TXT format, and English medical records translated into English for the editor’s reference.  
 
-This dataset has been successfully used in the publication of a Chinese paper. Link: https://kns.cnki.net/kcms2/article/abstract?v=YtMUyApXHwbklhkedd6Q1mhQTUGRxIXIUaK9Sy4Dvorz9Xf3ZFqpMzB2DH5J7pMdXEHj1h_A0Z6HHHZ9oH2wKqjYonXRUjatYMxhkBz28GvuZ5F9Rh5aD5mbz_qSp-QFcmb5vwaD2oMU_q8IcEZSNQojDBcwRbH2F6Aely9T1aPppYMDV4ed8A==&uniplatform=NZKPT&language=CHS
