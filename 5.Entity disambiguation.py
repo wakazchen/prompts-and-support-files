@@ -8,7 +8,7 @@ def read_entities(file_path):
         entities = file.read().splitlines()
     return entities
 
-
+# Entities are saved to 4 files
 cat1_entities = read_entities('cat1.txt')
 cat2_entities = read_entities('cat2.txt')
 cat3_entities = read_entities('cat3.txt')
@@ -54,4 +54,5 @@ response = openai.Completion.create(
 disambiguated_entities = response.choices[0].text.strip()
 print("list：")
 print(disambiguated_entities)
+
 
