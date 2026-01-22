@@ -48,7 +48,7 @@ def classify_entities(documents, categories):
             results[doc_name] = classified_entities
 
         except Exception as e:
-            print(f"调用 API 时出错：{e}")
+            print(f"wrong：{e}")
 
     return results
 
@@ -70,8 +70,9 @@ def main():
     results = classify_entities(documents, categories)
 
     save_results_to_json(results, 'classification_results.json')
-    print("结果已保存到 classification_results.json")
+    print("saved to classification_results.json")
 
 
 if __name__ == "__main__":
     main()
+
