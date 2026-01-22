@@ -52,5 +52,6 @@ response = openai.Completion.create(
 )
 
 disambiguated_entities = response.choices[0].text.strip()
-print("消歧后的实体列表：")
+print("list：")
 print(disambiguated_entities)
+
